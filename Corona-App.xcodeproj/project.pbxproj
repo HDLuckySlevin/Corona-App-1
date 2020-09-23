@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57777CAD24D62A6200AE8252 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777CAC24D62A6200AE8252 /* LocationSearchTable.swift */; };
+		57777CB024DA0FAE00AE8252 /* SuggestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777CAF24DA0FAE00AE8252 /* SuggestionsTableViewController.swift */; };
+		57777CB224DB3EE600AE8252 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777CB124DB3EE500AE8252 /* PlaceAnnotation.swift */; };
+		57777CB424DB486E00AE8252 /* MKPlacemark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777CB324DB486E00AE8252 /* MKPlacemark+Extension.swift */; };
+		57777CC724DC784400AE8252 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57777CC624DC784400AE8252 /* Localizable.strings */; };
+		57BDCBB1248C33A500D2139D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBB0248C33A500D2139D /* AppDelegate.swift */; };
+		57BDCBB3248C33A500D2139D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBB2248C33A500D2139D /* SceneDelegate.swift */; };
+		57BDCBB5248C33A500D2139D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBB4248C33A500D2139D /* MainViewController.swift */; };
+		57BDCBB8248C33A500D2139D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBB6248C33A500D2139D /* Main.storyboard */; };
+		57BDCBBB248C33A500D2139D /* Corona_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBB9248C33A500D2139D /* Corona_App.xcdatamodeld */; };
+		57BDCBBD248C33A600D2139D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBBC248C33A600D2139D /* Assets.xcassets */; };
+		57BDCBDD248C34C500D2139D /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBCA248C34C400D2139D /* Raleway-Black.ttf */; };
+		57BDCBDE248C34C500D2139D /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBCB248C34C400D2139D /* Raleway-Thin.ttf */; };
+		57BDCBDF248C34C500D2139D /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBCC248C34C400D2139D /* Raleway-BlackItalic.ttf */; };
+		57BDCBE0248C34C500D2139D /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBCD248C34C400D2139D /* OFL.txt */; };
+		57BDCBE1248C34C500D2139D /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBCE248C34C400D2139D /* Raleway-ExtraLight.ttf */; };
+		57BDCBE2248C34C500D2139D /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBCF248C34C400D2139D /* Raleway-ExtraLightItalic.ttf */; };
+		57BDCBE3248C34C500D2139D /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD0248C34C400D2139D /* Raleway-Medium.ttf */; };
+		57BDCBE4248C34C500D2139D /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD1248C34C400D2139D /* Raleway-MediumItalic.ttf */; };
+		57BDCBE5248C34C500D2139D /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD2248C34C400D2139D /* Raleway-Regular.ttf */; };
+		57BDCBE6248C34C500D2139D /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD3248C34C400D2139D /* Raleway-LightItalic.ttf */; };
+		57BDCBE7248C34C500D2139D /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD4248C34C400D2139D /* Raleway-SemiBoldItalic.ttf */; };
+		57BDCBE8248C34C500D2139D /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD5248C34C400D2139D /* Raleway-Bold.ttf */; };
+		57BDCBE9248C34C500D2139D /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD6248C34C400D2139D /* Raleway-BoldItalic.ttf */; };
+		57BDCBEA248C34C500D2139D /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD7248C34C400D2139D /* Raleway-ExtraBoldItalic.ttf */; };
+		57BDCBEB248C34C500D2139D /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD8248C34C400D2139D /* Raleway-SemiBold.ttf */; };
+		57BDCBEC248C34C500D2139D /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBD9248C34C400D2139D /* Raleway-Light.ttf */; };
+		57BDCBED248C34C500D2139D /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBDA248C34C400D2139D /* Raleway-Italic.ttf */; };
+		57BDCBEE248C34C500D2139D /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBDB248C34C400D2139D /* Raleway-ThinItalic.ttf */; };
+		57BDCBEF248C34C500D2139D /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBDC248C34C400D2139D /* Raleway-ExtraBold.ttf */; };
+		57BDCBF1248C34D000D2139D /* SwiftGifExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBF0248C34D000D2139D /* SwiftGifExtension.swift */; };
+		57BDCBF3248C34F100D2139D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBF2248C34F100D2139D /* LaunchScreenViewController.swift */; };
+		57BDCBF7248C4F8C00D2139D /* giphy-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 57BDCBF6248C4F8C00D2139D /* giphy-2.gif */; };
+		57BDCBF9248D688600D2139D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBF8248D688600D2139D /* QuestionViewController.swift */; };
+		57BDCBFB248D693700D2139D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBFA248D693700D2139D /* NewsViewController.swift */; };
+		57BDCBFF248D710200D2139D /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCBFE248D710200D2139D /* StatisticsViewController.swift */; };
+		57BDCC01248D75D100D2139D /* SecondQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC00248D75D100D2139D /* SecondQuestionViewController.swift */; };
+		57BDCC03248D763E00D2139D /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC02248D763E00D2139D /* StationViewController.swift */; };
+		57BDCC08248FBC8F00D2139D /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC07248FBC8F00D2139D /* UINavigationControllerExtension.swift */; };
+		57BDCC0C248FE77B00D2139D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC0B248FE77B00D2139D /* Question.swift */; };
+		57BDCC10248FFBF000D2139D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC0F248FFBF000D2139D /* NewsTableViewCell.swift */; };
+		57BDCC132496CA4B00D2139D /* EndangeredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC122496CA4B00D2139D /* EndangeredViewController.swift */; };
+		57BDCC152496CB0700D2139D /* NotEndangeredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC142496CB0700D2139D /* NotEndangeredViewController.swift */; };
+		57BDCC172496CDDF00D2139D /* CategoryOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC162496CDDF00D2139D /* CategoryOneViewController.swift */; };
+		57BDCC192496CDF700D2139D /* CategoryTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC182496CDF700D2139D /* CategoryTwoViewController.swift */; };
+		57BDCC1C249830A500D2139D /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC1B249830A500D2139D /* StationTableViewCell.swift */; };
+		57BDCC1E2499368300D2139D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDCC1D2499368300D2139D /* TabBarViewController.swift */; };
+		57BFFAD624E1F33A00207163 /* RiskAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BFFAD524E1F33A00207163 /* RiskAreaViewController.swift */; };
+		57E213D524E6B12000688DE2 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E213D424E6B12000688DE2 /* InformationViewController.swift */; };
+		BAF995E4F024C4E4A2AE13D7 /* Pods_Corona_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F365803A6F5A1AF95C6D2C /* Pods_Corona_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F336F4AB272B671DC523B4A /* Pods-Corona-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona-App.debug.xcconfig"; path = "Target Support Files/Pods-Corona-App/Pods-Corona-App.debug.xcconfig"; sourceTree = "<group>"; };
+		57777CAC24D62A6200AE8252 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		57777CAF24DA0FAE00AE8252 /* SuggestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTableViewController.swift; sourceTree = "<group>"; };
+		57777CB124DB3EE500AE8252 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		57777CB324DB486E00AE8252 /* MKPlacemark+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPlacemark+Extension.swift"; sourceTree = "<group>"; };
+		57777CC624DC784400AE8252 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		57BDCBAD248C33A500D2139D /* Corona-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corona-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BDCBB0248C33A500D2139D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57BDCBB2248C33A500D2139D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		57BDCBB4248C33A500D2139D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		57BDCBB7248C33A500D2139D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57BDCBBA248C33A500D2139D /* Corona_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Corona_App.xcdatamodel; sourceTree = "<group>"; };
+		57BDCBBC248C33A600D2139D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57BDCBC1248C33A600D2139D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57BDCBCA248C34C400D2139D /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		57BDCBCB248C34C400D2139D /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		57BDCBCC248C34C400D2139D /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBCD248C34C400D2139D /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		57BDCBCE248C34C400D2139D /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		57BDCBCF248C34C400D2139D /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBD0248C34C400D2139D /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		57BDCBD1248C34C400D2139D /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBD2248C34C400D2139D /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		57BDCBD3248C34C400D2139D /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBD4248C34C400D2139D /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBD5248C34C400D2139D /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		57BDCBD6248C34C400D2139D /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBD7248C34C400D2139D /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBD8248C34C400D2139D /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		57BDCBD9248C34C400D2139D /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		57BDCBDA248C34C400D2139D /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		57BDCBDB248C34C400D2139D /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		57BDCBDC248C34C400D2139D /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		57BDCBF0248C34D000D2139D /* SwiftGifExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGifExtension.swift; sourceTree = "<group>"; };
+		57BDCBF2248C34F100D2139D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		57BDCBF6248C4F8C00D2139D /* giphy-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "giphy-2.gif"; sourceTree = "<group>"; };
+		57BDCBF8248D688600D2139D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		57BDCBFA248D693700D2139D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		57BDCBFE248D710200D2139D /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		57BDCC00248D75D100D2139D /* SecondQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionViewController.swift; sourceTree = "<group>"; };
+		57BDCC02248D763E00D2139D /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
+		57BDCC07248FBC8F00D2139D /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		57BDCC0B248FE77B00D2139D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		57BDCC0F248FFBF000D2139D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		57BDCC122496CA4B00D2139D /* EndangeredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndangeredViewController.swift; sourceTree = "<group>"; };
+		57BDCC142496CB0700D2139D /* NotEndangeredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEndangeredViewController.swift; sourceTree = "<group>"; };
+		57BDCC162496CDDF00D2139D /* CategoryOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOneViewController.swift; sourceTree = "<group>"; };
+		57BDCC182496CDF700D2139D /* CategoryTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTwoViewController.swift; sourceTree = "<group>"; };
+		57BDCC1B249830A500D2139D /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		57BDCC1D2499368300D2139D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		57BFFAD524E1F33A00207163 /* RiskAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAreaViewController.swift; sourceTree = "<group>"; };
+		57E213D424E6B12000688DE2 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		73F365803A6F5A1AF95C6D2C /* Pods_Corona_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corona_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28950F86774EB97D3D63F0E /* Pods-Corona-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona-App.release.xcconfig"; path = "Target Support Files/Pods-Corona-App/Pods-Corona-App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57BDCBAA248C33A500D2139D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF995E4F024C4E4A2AE13D7 /* Pods_Corona_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C888CA889FB56696FC04D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F336F4AB272B671DC523B4A /* Pods-Corona-App.debug.xcconfig */,
+				E28950F86774EB97D3D63F0E /* Pods-Corona-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		57777CAE24DA0F7500AE8252 /* StationController */ = {
+			isa = PBXGroup;
+			children = (
+				57777CAC24D62A6200AE8252 /* LocationSearchTable.swift */,
+				57BDCC1B249830A500D2139D /* StationTableViewCell.swift */,
+				57777CC624DC784400AE8252 /* Localizable.strings */,
+				57777CB124DB3EE500AE8252 /* PlaceAnnotation.swift */,
+				57777CB324DB486E00AE8252 /* MKPlacemark+Extension.swift */,
+				57BDCC02248D763E00D2139D /* StationViewController.swift */,
+				57777CAF24DA0FAE00AE8252 /* SuggestionsTableViewController.swift */,
+			);
+			path = StationController;
+			sourceTree = "<group>";
+		};
+		57BDCBA4248C33A500D2139D = {
+			isa = PBXGroup;
+			children = (
+				57BDCBAF248C33A500D2139D /* Corona-App */,
+				57BDCBAE248C33A500D2139D /* Products */,
+				11C888CA889FB56696FC04D2 /* Pods */,
+				638FE1679C2F7B3851A68447 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57BDCBAE248C33A500D2139D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57BDCBAD248C33A500D2139D /* Corona-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BDCBAF248C33A500D2139D /* Corona-App */ = {
+			isa = PBXGroup;
+			children = (
+				57BDCBB0248C33A500D2139D /* AppDelegate.swift */,
+				57BDCBB2248C33A500D2139D /* SceneDelegate.swift */,
+				57BDCBF2248C34F100D2139D /* LaunchScreenViewController.swift */,
+				57BFFAD524E1F33A00207163 /* RiskAreaViewController.swift */,
+				57BDCBB4248C33A500D2139D /* MainViewController.swift */,
+				57BDCC1D2499368300D2139D /* TabBarViewController.swift */,
+				57BDCBF8248D688600D2139D /* QuestionViewController.swift */,
+				57BDCC0B248FE77B00D2139D /* Question.swift */,
+				57BDCC00248D75D100D2139D /* SecondQuestionViewController.swift */,
+				57BDCC122496CA4B00D2139D /* EndangeredViewController.swift */,
+				57BDCC142496CB0700D2139D /* NotEndangeredViewController.swift */,
+				57BDCC162496CDDF00D2139D /* CategoryOneViewController.swift */,
+				57BDCC182496CDF700D2139D /* CategoryTwoViewController.swift */,
+				57BDCC1A2496DCDA00D2139D /* TabBarViews */,
+				57BDCBB6248C33A500D2139D /* Main.storyboard */,
+				57BDCBBC248C33A600D2139D /* Assets.xcassets */,
+				57BDCBF6248C4F8C00D2139D /* giphy-2.gif */,
+				57BDCBC1248C33A600D2139D /* Info.plist */,
+				57BDCBB9248C33A500D2139D /* Corona_App.xcdatamodeld */,
+				57BDCBF0248C34D000D2139D /* SwiftGifExtension.swift */,
+				57BDCC07248FBC8F00D2139D /* UINavigationControllerExtension.swift */,
+				57BDCBC9248C34AA00D2139D /* fonts */,
+			);
+			path = "Corona-App";
+			sourceTree = "<group>";
+		};
+		57BDCBC9248C34AA00D2139D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				57BDCBCD248C34C400D2139D /* OFL.txt */,
+				57BDCBCA248C34C400D2139D /* Raleway-Black.ttf */,
+				57BDCBCC248C34C400D2139D /* Raleway-BlackItalic.ttf */,
+				57BDCBD5248C34C400D2139D /* Raleway-Bold.ttf */,
+				57BDCBD6248C34C400D2139D /* Raleway-BoldItalic.ttf */,
+				57BDCBDC248C34C400D2139D /* Raleway-ExtraBold.ttf */,
+				57BDCBD7248C34C400D2139D /* Raleway-ExtraBoldItalic.ttf */,
+				57BDCBCE248C34C400D2139D /* Raleway-ExtraLight.ttf */,
+				57BDCBCF248C34C400D2139D /* Raleway-ExtraLightItalic.ttf */,
+				57BDCBDA248C34C400D2139D /* Raleway-Italic.ttf */,
+				57BDCBD9248C34C400D2139D /* Raleway-Light.ttf */,
+				57BDCBD3248C34C400D2139D /* Raleway-LightItalic.ttf */,
+				57BDCBD0248C34C400D2139D /* Raleway-Medium.ttf */,
+				57BDCBD1248C34C400D2139D /* Raleway-MediumItalic.ttf */,
+				57BDCBD2248C34C400D2139D /* Raleway-Regular.ttf */,
+				57BDCBD8248C34C400D2139D /* Raleway-SemiBold.ttf */,
+				57BDCBD4248C34C400D2139D /* Raleway-SemiBoldItalic.ttf */,
+				57BDCBCB248C34C400D2139D /* Raleway-Thin.ttf */,
+				57BDCBDB248C34C400D2139D /* Raleway-ThinItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		57BDCC1A2496DCDA00D2139D /* TabBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				57BDCBFA248D693700D2139D /* NewsViewController.swift */,
+				57BDCC0F248FFBF000D2139D /* NewsTableViewCell.swift */,
+				57E213D424E6B12000688DE2 /* InformationViewController.swift */,
+				57BDCBFE248D710200D2139D /* StatisticsViewController.swift */,
+				57777CAE24DA0F7500AE8252 /* StationController */,
+			);
+			path = TabBarViews;
+			sourceTree = "<group>";
+		};
+		638FE1679C2F7B3851A68447 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F365803A6F5A1AF95C6D2C /* Pods_Corona_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57BDCBAC248C33A500D2139D /* Corona-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57BDCBC4248C33A600D2139D /* Build configuration list for PBXNativeTarget "Corona-App" */;
+			buildPhases = (
+				56B16C4E8CC71EFFC52170DB /* [CP] Check Pods Manifest.lock */,
+				57BDCBA9248C33A500D2139D /* Sources */,
+				57BDCBAA248C33A500D2139D /* Frameworks */,
+				57BDCBAB248C33A500D2139D /* Resources */,
+				EA6286FD00E014B506B2209F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Corona-App";
+			productName = "Corona-App";
+			productReference = 57BDCBAD248C33A500D2139D /* Corona-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57BDCBA5248C33A500D2139D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = BB1151;
+				TargetAttributes = {
+					57BDCBAC248C33A500D2139D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 57BDCBA8248C33A500D2139D /* Build configuration list for PBXProject "Corona-App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57BDCBA4248C33A500D2139D;
+			productRefGroup = 57BDCBAE248C33A500D2139D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57BDCBAC248C33A500D2139D /* Corona-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57BDCBAB248C33A500D2139D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BDCBE1248C34C500D2139D /* Raleway-ExtraLight.ttf in Resources */,
+				57BDCBE0248C34C500D2139D /* OFL.txt in Resources */,
+				57777CC724DC784400AE8252 /* Localizable.strings in Resources */,
+				57BDCBDE248C34C500D2139D /* Raleway-Thin.ttf in Resources */,
+				57BDCBE2248C34C500D2139D /* Raleway-ExtraLightItalic.ttf in Resources */,
+				57BDCBF7248C4F8C00D2139D /* giphy-2.gif in Resources */,
+				57BDCBDD248C34C500D2139D /* Raleway-Black.ttf in Resources */,
+				57BDCBE7248C34C500D2139D /* Raleway-SemiBoldItalic.ttf in Resources */,
+				57BDCBED248C34C500D2139D /* Raleway-Italic.ttf in Resources */,
+				57BDCBE4248C34C500D2139D /* Raleway-MediumItalic.ttf in Resources */,
+				57BDCBEA248C34C500D2139D /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				57BDCBDF248C34C500D2139D /* Raleway-BlackItalic.ttf in Resources */,
+				57BDCBEF248C34C500D2139D /* Raleway-ExtraBold.ttf in Resources */,
+				57BDCBEB248C34C500D2139D /* Raleway-SemiBold.ttf in Resources */,
+				57BDCBEE248C34C500D2139D /* Raleway-ThinItalic.ttf in Resources */,
+				57BDCBE5248C34C500D2139D /* Raleway-Regular.ttf in Resources */,
+				57BDCBE3248C34C500D2139D /* Raleway-Medium.ttf in Resources */,
+				57BDCBE9248C34C500D2139D /* Raleway-BoldItalic.ttf in Resources */,
+				57BDCBE6248C34C500D2139D /* Raleway-LightItalic.ttf in Resources */,
+				57BDCBBD248C33A600D2139D /* Assets.xcassets in Resources */,
+				57BDCBEC248C34C500D2139D /* Raleway-Light.ttf in Resources */,
+				57BDCBE8248C34C500D2139D /* Raleway-Bold.ttf in Resources */,
+				57BDCBB8248C33A500D2139D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56B16C4E8CC71EFFC52170DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Corona-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6286FD00E014B506B2209F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona-App/Pods-Corona-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Corona-App/Pods-Corona-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Corona-App/Pods-Corona-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57BDCBA9248C33A500D2139D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BDCBB5248C33A500D2139D /* MainViewController.swift in Sources */,
+				57BDCBFF248D710200D2139D /* StatisticsViewController.swift in Sources */,
+				57BDCC10248FFBF000D2139D /* NewsTableViewCell.swift in Sources */,
+				57BDCC192496CDF700D2139D /* CategoryTwoViewController.swift in Sources */,
+				57BDCC1E2499368300D2139D /* TabBarViewController.swift in Sources */,
+				57BFFAD624E1F33A00207163 /* RiskAreaViewController.swift in Sources */,
+				57BDCC152496CB0700D2139D /* NotEndangeredViewController.swift in Sources */,
+				57BDCBBB248C33A500D2139D /* Corona_App.xcdatamodeld in Sources */,
+				57BDCC1C249830A500D2139D /* StationTableViewCell.swift in Sources */,
+				57777CAD24D62A6200AE8252 /* LocationSearchTable.swift in Sources */,
+				57777CB024DA0FAE00AE8252 /* SuggestionsTableViewController.swift in Sources */,
+				57BDCC03248D763E00D2139D /* StationViewController.swift in Sources */,
+				57BDCC132496CA4B00D2139D /* EndangeredViewController.swift in Sources */,
+				57BDCBF9248D688600D2139D /* QuestionViewController.swift in Sources */,
+				57BDCC0C248FE77B00D2139D /* Question.swift in Sources */,
+				57BDCBB1248C33A500D2139D /* AppDelegate.swift in Sources */,
+				57E213D524E6B12000688DE2 /* InformationViewController.swift in Sources */,
+				57BDCC01248D75D100D2139D /* SecondQuestionViewController.swift in Sources */,
+				57BDCBF1248C34D000D2139D /* SwiftGifExtension.swift in Sources */,
+				57BDCBF3248C34F100D2139D /* LaunchScreenViewController.swift in Sources */,
+				57BDCC172496CDDF00D2139D /* CategoryOneViewController.swift in Sources */,
+				57BDCBB3248C33A500D2139D /* SceneDelegate.swift in Sources */,
+				57BDCC08248FBC8F00D2139D /* UINavigationControllerExtension.swift in Sources */,
+				57777CB224DB3EE600AE8252 /* PlaceAnnotation.swift in Sources */,
+				57BDCBFB248D693700D2139D /* NewsViewController.swift in Sources */,
+				57777CB424DB486E00AE8252 /* MKPlacemark+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57BDCBB6248C33A500D2139D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57BDCBB7248C33A500D2139D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57BDCBC2248C33A600D2139D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57BDCBC3248C33A600D2139D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57BDCBC5248C33A600D2139D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F336F4AB272B671DC523B4A /* Pods-Corona-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA84T86VK8;
+				INFOPLIST_FILE = "Corona-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bb1151.Corona-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57BDCBC6248C33A600D2139D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28950F86774EB97D3D63F0E /* Pods-Corona-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA84T86VK8;
+				INFOPLIST_FILE = "Corona-App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bb1151.Corona-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57BDCBA8248C33A500D2139D /* Build configuration list for PBXProject "Corona-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BDCBC2248C33A600D2139D /* Debug */,
+				57BDCBC3248C33A600D2139D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57BDCBC4248C33A600D2139D /* Build configuration list for PBXNativeTarget "Corona-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BDCBC5248C33A600D2139D /* Debug */,
+				57BDCBC6248C33A600D2139D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57BDCBB9248C33A500D2139D /* Corona_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57BDCBBA248C33A500D2139D /* Corona_App.xcdatamodel */,
+			);
+			currentVersion = 57BDCBBA248C33A500D2139D /* Corona_App.xcdatamodel */;
+			path = Corona_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 57BDCBA5248C33A500D2139D /* Project object */;
+}
